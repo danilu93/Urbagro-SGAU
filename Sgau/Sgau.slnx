@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../EntityFramework/EntityFramework.csproj" />
+  <Project Path="../Modelo/Modelo.csproj" />
+  <Project Path="Sgau.csproj" />
+</Solution>
