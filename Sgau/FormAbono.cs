@@ -61,6 +61,16 @@ namespace Sgau
             }
         }
 
+        // Evento para manejar la tecla presionada en el NumericUpDown de cantidad de riego
+        private void numCantidadRiego_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ',')
+            {
+                e.Handled = true;
+                SendKeys.Send("."); // Reemplazar la coma por un punto para permitir decimales
+            }
+        }
+
         // Método para manejar el evento de clic en el botón de guardar
         private void btnGuardarAbono_Click(object sender, EventArgs e)
         {

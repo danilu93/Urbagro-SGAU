@@ -102,21 +102,36 @@ namespace Sgau
             }
         }
 
+        Button botonSeleccionado = null; // Variable para almacenar el botón seleccionado actualmente
+
+        private void ResaltarBoton(Button boton)
+        {
+            if (botonSeleccionado != null)
+            {
+                botonSeleccionado.BackColor = Color.DarkOliveGreen; // Restablecer el color del botón previamente seleccionado
+            }
+            boton.BackColor = Color.LightBlue; // Cambiar el color del botón seleccionado
+            botonSeleccionado = boton; // Actualizar el botón seleccionado actualmente
+        }
+
         // Agrega eventos para el botón de dashboard
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            ResaltarBoton(btnDashboard); // Resaltar el botón de dashboard al hacer clic
             CargarVista(new DashboardControl()); // Cargar la vista del dashboard al hacer clic en el botón correspondiente
         }
 
         // Agrega eventos para el botón de plantas
         private void btnPlantas_Click(object sender, EventArgs e)
         {
+            ResaltarBoton(btnPlantas); // Resaltar el botón de plantas al hacer clic
             CargarVista(new PlantasControl()); // Cargar la vista de plantas al hacer clic en el botón correspondiente
         }
 
         // Agrega eventos para el botón de riegos
         private void btnRiego_Click(object sender, EventArgs e)
         {
+            ResaltarBoton(btnRiego); // Resaltar el botón de riegos al hacer clic
             CargarVista(new RiegosControl()); // Cargar la vista de todos los riegos al hacer clic en el botón correspondiente
 
         }
@@ -124,9 +139,11 @@ namespace Sgau
         // Agrega eventos para el botón de abonos
         private void btnAbono_Click(object sender, EventArgs e)
         {
+            ResaltarBoton(btnAbono); // Resaltar el botón de abonos al hacer clic
             int plantaId = 0; // Aquí deberías obtener el ID de la planta seleccionada para mostrar los abonos correspondientes
             CargarVista(new AbonosControl()); // Cargar la vista de todos losabonos al hacer clic en el botón correspondiente
 
         }
+
     }
 }

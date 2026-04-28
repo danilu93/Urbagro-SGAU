@@ -41,6 +41,8 @@
             label1 = new Label();
             btnEditarAbono = new Button();
             btnEliminarAbono = new Button();
+            label8 = new Label();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvAbonos).BeginInit();
             panelMenu.SuspendLayout();
             SuspendLayout();
@@ -75,6 +77,7 @@
             dgvAbonos.Location = new Point(0, 0);
             dgvAbonos.MultiSelect = false;
             dgvAbonos.Name = "dgvAbonos";
+            dgvAbonos.ReadOnly = true;
             dgvAbonos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = SystemColors.Control;
@@ -87,13 +90,15 @@
             dgvAbonos.RowHeadersVisible = false;
             dgvAbonos.RowTemplate.Height = 30;
             dgvAbonos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAbonos.Size = new Size(889, 861);
+            dgvAbonos.Size = new Size(890, 861);
             dgvAbonos.TabIndex = 26;
             dgvAbonos.SelectionChanged += dgvAbonos_SelectionChanged;
             // 
             // panelMenu
             // 
             panelMenu.BackColor = Color.DarkOliveGreen;
+            panelMenu.Controls.Add(label8);
+            panelMenu.Controls.Add(label7);
             panelMenu.Controls.Add(label2);
             panelMenu.Controls.Add(btnVerInfo);
             panelMenu.Controls.Add(label11);
@@ -102,9 +107,9 @@
             panelMenu.Controls.Add(btnEditarAbono);
             panelMenu.Controls.Add(btnEliminarAbono);
             panelMenu.Dock = DockStyle.Right;
-            panelMenu.Location = new Point(889, 0);
+            panelMenu.Location = new Point(890, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(93, 861);
+            panelMenu.Size = new Size(92, 861);
             panelMenu.TabIndex = 27;
             // 
             // label2
@@ -113,7 +118,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FloralWhite;
-            label2.Location = new Point(11, 694);
+            label2.Location = new Point(10, 694);
             label2.Name = "label2";
             label2.Size = new Size(68, 25);
             label2.TabIndex = 34;
@@ -142,7 +147,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FloralWhite;
-            label11.Location = new Point(6, 456);
+            label11.Location = new Point(5, 456);
             label11.Name = "label11";
             label11.Size = new Size(84, 25);
             label11.TabIndex = 32;
@@ -154,7 +159,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.FloralWhite;
-            label10.Location = new Point(13, 236);
+            label10.Location = new Point(12, 236);
             label10.Name = "label10";
             label10.Size = new Size(64, 25);
             label10.TabIndex = 31;
@@ -166,7 +171,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FloralWhite;
-            label1.Location = new Point(20, 669);
+            label1.Location = new Point(19, 669);
             label1.Name = "label1";
             label1.Size = new Size(49, 25);
             label1.TabIndex = 30;
@@ -204,6 +209,33 @@
             btnEliminarAbono.UseVisualStyleBackColor = false;
             btnEliminarAbono.Click += btnEliminarAbono_Click;
             // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FloralWhite;
+            label8.Location = new Point(3, 60);
+            label8.Name = "label8";
+            label8.Size = new Size(91, 32);
+            label8.TabIndex = 36;
+            label8.Text = "Abono";
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.FlatStyle = FlatStyle.Flat;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.FloralWhite;
+            label7.Location = new Point(7, 28);
+            label7.Name = "label7";
+            label7.Size = new Size(87, 32);
+            label7.TabIndex = 35;
+            label7.Text = "Menu ";
+            // 
             // AbonosControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -229,5 +261,7 @@
         private Label label11;
         private Button btnVerInfo;
         private Label label2;
+        private Label label8;
+        private Label label7;
     }
 }

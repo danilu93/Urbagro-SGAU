@@ -30,23 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardControl));
             panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            label1 = new Label();
+            pictureBox1 = new PictureBox();
             lblTotalPlantas = new Label();
-            lblTotalRiegos = new Label();
-            label4 = new Label();
+            label1 = new Label();
+            panel2 = new Panel();
+            pictureBox3 = new PictureBox();
             lblTotalAbonos = new Label();
             label6 = new Label();
-            pictureBox1 = new PictureBox();
+            panel3 = new Panel();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
+            lblTotalRiegos = new Label();
+            label4 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -60,27 +61,26 @@
             panel1.Size = new Size(828, 97);
             panel1.TabIndex = 0;
             // 
-            // panel2
+            // pictureBox1
             // 
-            panel2.BackColor = Color.Wheat;
-            panel2.Controls.Add(pictureBox3);
-            panel2.Controls.Add(lblTotalAbonos);
-            panel2.Controls.Add(label6);
-            panel2.Location = new Point(87, 573);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(828, 97);
-            panel2.TabIndex = 1;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(351, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(159, 91);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
-            // panel3
+            // lblTotalPlantas
             // 
-            panel3.BackColor = Color.Wheat;
-            panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(lblTotalRiegos);
-            panel3.Controls.Add(label4);
-            panel3.Location = new Point(87, 354);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(828, 97);
-            panel3.TabIndex = 1;
+            lblTotalPlantas.AutoSize = true;
+            lblTotalPlantas.FlatStyle = FlatStyle.Flat;
+            lblTotalPlantas.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalPlantas.ForeColor = Color.DarkOliveGreen;
+            lblTotalPlantas.Location = new Point(610, 33);
+            lblTotalPlantas.Name = "lblTotalPlantas";
+            lblTotalPlantas.Size = new Size(0, 25);
+            lblTotalPlantas.TabIndex = 1;
             // 
             // label1
             // 
@@ -94,38 +94,26 @@
             label1.TabIndex = 0;
             label1.Text = "TOTAL PLANTAS";
             // 
-            // lblTotalPlantas
+            // panel2
             // 
-            lblTotalPlantas.AutoSize = true;
-            lblTotalPlantas.FlatStyle = FlatStyle.Flat;
-            lblTotalPlantas.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTotalPlantas.ForeColor = Color.DarkOliveGreen;
-            lblTotalPlantas.Location = new Point(610, 33);
-            lblTotalPlantas.Name = "lblTotalPlantas";
-            lblTotalPlantas.Size = new Size(0, 25);
-            lblTotalPlantas.TabIndex = 1;
+            panel2.BackColor = Color.Wheat;
+            panel2.Controls.Add(pictureBox3);
+            panel2.Controls.Add(lblTotalAbonos);
+            panel2.Controls.Add(label6);
+            panel2.Location = new Point(87, 573);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(828, 97);
+            panel2.TabIndex = 1;
             // 
-            // lblTotalRiegos
+            // pictureBox3
             // 
-            lblTotalRiegos.AutoSize = true;
-            lblTotalRiegos.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTotalRiegos.ForeColor = Color.DarkOliveGreen;
-            lblTotalRiegos.Location = new Point(610, 43);
-            lblTotalRiegos.Name = "lblTotalRiegos";
-            lblTotalRiegos.Size = new Size(0, 25);
-            lblTotalRiegos.TabIndex = 3;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.FlatStyle = FlatStyle.Flat;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.DarkOliveGreen;
-            label4.Location = new Point(57, 43);
-            label4.Name = "label4";
-            label4.Size = new Size(140, 25);
-            label4.TabIndex = 2;
-            label4.Text = "TOTAL RIEGOS";
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Location = new Point(351, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(159, 91);
+            pictureBox3.TabIndex = 4;
+            pictureBox3.TabStop = false;
             // 
             // lblTotalAbonos
             // 
@@ -149,15 +137,16 @@
             label6.TabIndex = 4;
             label6.Text = "TOTAL ABONOS";
             // 
-            // pictureBox1
+            // panel3
             // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(351, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(159, 91);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            panel3.BackColor = Color.Wheat;
+            panel3.Controls.Add(pictureBox2);
+            panel3.Controls.Add(lblTotalRiegos);
+            panel3.Controls.Add(label4);
+            panel3.Location = new Point(87, 354);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(828, 97);
+            panel3.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -169,21 +158,45 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // lblTotalRiegos
             // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(351, 3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(159, 91);
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
+            lblTotalRiegos.AutoSize = true;
+            lblTotalRiegos.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalRiegos.ForeColor = Color.DarkOliveGreen;
+            lblTotalRiegos.Location = new Point(610, 43);
+            lblTotalRiegos.Name = "lblTotalRiegos";
+            lblTotalRiegos.Size = new Size(0, 25);
+            lblTotalRiegos.TabIndex = 3;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.DarkOliveGreen;
+            label4.Location = new Point(57, 43);
+            label4.Name = "label4";
+            label4.Size = new Size(140, 25);
+            label4.TabIndex = 2;
+            label4.Text = "TOTAL RIEGOS";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.DarkOliveGreen;
+            label2.Location = new Point(372, 26);
+            label2.Name = "label2";
+            label2.Size = new Size(273, 65);
+            label2.TabIndex = 2;
+            label2.Text = "Dashboard";
             // 
             // DashboardControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
+            Controls.Add(label2);
             Controls.Add(panel2);
             Controls.Add(panel3);
             Controls.Add(panel1);
@@ -191,14 +204,15 @@
             Size = new Size(982, 861);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -215,5 +229,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private Label label2;
     }
 }

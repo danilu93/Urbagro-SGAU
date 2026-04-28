@@ -48,14 +48,18 @@
             // 
             // numCantidadRiego
             // 
+            numCantidadRiego.DecimalPlaces = 2;
+            numCantidadRiego.Increment = new decimal(new int[] { 1, 0, 0, 65536 });
             numCantidadRiego.Location = new Point(340, 506);
-            numCantidadRiego.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            numCantidadRiego.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numCantidadRiego.Name = "numCantidadRiego";
             numCantidadRiego.Size = new Size(72, 23);
             numCantidadRiego.TabIndex = 53;
+            numCantidadRiego.KeyPress += numCantidadRiego_KeyPress;
             // 
             // cmbMetodoRiego
             // 
+            cmbMetodoRiego.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbMetodoRiego.FormattingEnabled = true;
             cmbMetodoRiego.Location = new Point(340, 386);
             cmbMetodoRiego.Name = "cmbMetodoRiego";

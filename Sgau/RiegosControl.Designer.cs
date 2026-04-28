@@ -34,6 +34,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RiegosControl));
             dgvRiegos = new DataGridView();
             panelMenu = new Panel();
+            label2 = new Label();
+            label3 = new Label();
             label1 = new Label();
             btnVerInfo = new Button();
             label9 = new Label();
@@ -41,6 +43,8 @@
             label4 = new Label();
             btnEditarRiego = new Button();
             btnEliminarRiego = new Button();
+            label5 = new Label();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvRiegos).BeginInit();
             panelMenu.SuspendLayout();
             SuspendLayout();
@@ -75,6 +79,7 @@
             dgvRiegos.Location = new Point(0, 0);
             dgvRiegos.MultiSelect = false;
             dgvRiegos.Name = "dgvRiegos";
+            dgvRiegos.ReadOnly = true;
             dgvRiegos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = SystemColors.Control;
@@ -94,6 +99,10 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.DarkOliveGreen;
+            panelMenu.Controls.Add(label6);
+            panelMenu.Controls.Add(label5);
+            panelMenu.Controls.Add(label2);
+            panelMenu.Controls.Add(label3);
             panelMenu.Controls.Add(label1);
             panelMenu.Controls.Add(btnVerInfo);
             panelMenu.Controls.Add(label9);
@@ -106,6 +115,33 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(93, 861);
             panelMenu.TabIndex = 25;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FloralWhite;
+            label2.Location = new Point(7, 61);
+            label2.Name = "label2";
+            label2.Size = new Size(80, 32);
+            label2.TabIndex = 40;
+            label2.Text = "Riego";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FloralWhite;
+            label3.Location = new Point(6, 29);
+            label3.Name = "label3";
+            label3.Size = new Size(87, 32);
+            label3.TabIndex = 39;
+            label3.Text = "Menu ";
             // 
             // label1
             // 
@@ -206,6 +242,30 @@
             btnEliminarRiego.UseVisualStyleBackColor = false;
             btnEliminarRiego.Click += btnEliminarRiego_Click;
             // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FloralWhite;
+            label5.Location = new Point(13, 261);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 25);
+            label5.TabIndex = 41;
+            label5.Text = "Riego";
+            // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FloralWhite;
+            label6.Location = new Point(16, 481);
+            label6.Name = "label6";
+            label6.Size = new Size(63, 25);
+            label6.TabIndex = 42;
+            label6.Text = "Riego";
+            // 
             // RiegosControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -230,5 +290,9 @@
         private Label label4;
         private Button btnVerInfo;
         private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label6;
+        private Label label5;
     }
 }

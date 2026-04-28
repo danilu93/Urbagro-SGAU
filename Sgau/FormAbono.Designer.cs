@@ -146,6 +146,7 @@
             // 
             // cmbTipoAbono
             // 
+            cmbTipoAbono.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTipoAbono.FormattingEnabled = true;
             cmbTipoAbono.Location = new Point(340, 372);
             cmbTipoAbono.Name = "cmbTipoAbono";
@@ -154,11 +155,14 @@
             // 
             // numCantidadAbono
             // 
+            numCantidadAbono.DecimalPlaces = 2;
+            numCantidadAbono.Increment = new decimal(new int[] { 1, 0, 0, 65536 });
             numCantidadAbono.Location = new Point(340, 492);
-            numCantidadAbono.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            numCantidadAbono.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numCantidadAbono.Name = "numCantidadAbono";
             numCantidadAbono.Size = new Size(72, 23);
             numCantidadAbono.TabIndex = 42;
+            numCantidadAbono.KeyPress += numCantidadRiego_KeyPress;
             // 
             // label2
             // 

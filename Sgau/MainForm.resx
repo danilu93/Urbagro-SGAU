@@ -16828,7 +16828,7 @@
   <data name="btnAbono.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAACIlJREFUeF7tnQnQftUcxxPZarIUUmiQpRIqKinTNEZUBsOgBTOm0DAkS5YpNGba
+        DAAACwwBP0AiyAAACIlJREFUeF7tnQnQftUcxxPZarIUUmiQpRIqKinTNEZUBsOgBTOm0DAkS5YpNGba
         KVu2sjOakCWtaFJaSJZQKpmyRqgUsnzM99/ved336z7Pe7dznuU9n5ln/vP+77n3/u7v3nPuOb/trrVW
         oVAoFAqFQqGwBuDOwFOAtwIfA74NfA+4BPgKcDzwWmBb4E6+f2EggM2BE4Df0xy1/TjwZD9eoSPA1sAX
         gX+7tluiXrR36TUdAe4dw8+/XLM90Y0pPaYNwPOAG1yTA/KfGP7u6ecuVADuEb0iFz8DtnE5CnfcjC2A
@@ -16870,7 +16870,7 @@
   <data name="btnRiego.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAABixJREFUeF7t3VmIHEUcx/FEjVGjeEUQjHcQxRP0QURFjAc+KYImiheCEoiaQIIX
+        DQAACw0B7QfALAAABixJREFUeF7t3VmIHEUcx/FEjVGjeEUQjHcQxRP0QURFjAc+KYImiheCEoiaQIIX
         REQ8oi/eKCaIV1S8DyQqeTBBEZR464vEE8/EeAYTr6/8w7+X3t/2zs7Rs1NVXR9YWGb+3V3/6pnu6uqq
         ngkTsizLsizLsizLsizLsizLsixqwBRgBnAF8CjwBvANsA74F9jo/68GXgeWAJcDxwBb6vqyLgA7ArOB
         V4ANdG898DJwPrCtbicbA3Aw8BDwp9ZsDf4AFgPTdbuZsEoCngH+01rsg3+ApcCeWo7GAyYDN/p5oJXv

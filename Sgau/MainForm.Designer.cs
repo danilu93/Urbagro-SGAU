@@ -38,6 +38,9 @@
             lblBienvenida = new Label();
             btnLogOut = new Button();
             panelMenu = new Panel();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             btnPlantas = new Button();
@@ -72,6 +75,7 @@
             // 
             // cmbBuscar
             // 
+            cmbBuscar.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbBuscar.FormattingEnabled = true;
             cmbBuscar.Location = new Point(406, 62);
             cmbBuscar.Name = "cmbBuscar";
@@ -150,6 +154,9 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.DarkOliveGreen;
+            panelMenu.Controls.Add(label9);
+            panelMenu.Controls.Add(label8);
+            panelMenu.Controls.Add(label7);
             panelMenu.Controls.Add(label6);
             panelMenu.Controls.Add(label5);
             panelMenu.Controls.Add(btnPlantas);
@@ -166,6 +173,45 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(125, 934);
             panelMenu.TabIndex = 1;
+            // 
+            // label9
+            // 
+            label9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FloralWhite;
+            label9.Location = new Point(28, 360);
+            label9.Name = "label9";
+            label9.Size = new Size(64, 25);
+            label9.TabIndex = 22;
+            label9.Text = "Menu";
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FloralWhite;
+            label8.Location = new Point(7, 32);
+            label8.Name = "label8";
+            label8.Size = new Size(115, 32);
+            label8.TabIndex = 21;
+            label8.Text = "Principal";
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.FlatStyle = FlatStyle.Flat;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.FloralWhite;
+            label7.Location = new Point(22, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(87, 32);
+            label7.TabIndex = 20;
+            label7.Text = "Menu ";
             // 
             // label6
             // 
@@ -281,7 +327,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FloralWhite;
-            label1.Location = new Point(28, 360);
+            label1.Location = new Point(24, 384);
             label1.Name = "label1";
             label1.Size = new Size(76, 25);
             label1.TabIndex = 13;
@@ -359,5 +405,8 @@
         private Button btnDashboard;
         private Label label6;
         private Label label5;
+        private Label label8;
+        private Label label7;
+        private Label label9;
     }
 }

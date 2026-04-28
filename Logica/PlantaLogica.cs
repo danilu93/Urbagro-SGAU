@@ -69,8 +69,6 @@ namespace Logica
                 throw new ArgumentException("Tipo de planta inválido");
             if (planta.FechaSiembra == default) // Verifica que la fecha de siembra no sea la fecha por defecto
                 throw new ArgumentException("Fecha de siembra obligatoria.");
-            if (plantaDatos.PlantaExiste(planta.NombrePlanta)) // Verifica que no exista otra planta con el mismo nombre
-                throw new Exception("Ya existe otra planta con ese nombre.");
 
             bool resultado = plantaDatos.EditarPlanta(planta); // Llama al método de datos para editar la planta en la base de datos
             if (!resultado) // Si el método EditarPlanta devuelve false, significa que hubo un error al editar la planta
