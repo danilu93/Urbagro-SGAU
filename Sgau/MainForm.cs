@@ -145,5 +145,9 @@ namespace Sgau
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Cerrar la aplicación al hacer clic en el botón de cerrar
+        }
     }
 }

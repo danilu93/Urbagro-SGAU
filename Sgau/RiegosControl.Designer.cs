@@ -34,6 +34,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RiegosControl));
             dgvRiegos = new DataGridView();
             panelMenu = new Panel();
+            label6 = new Label();
+            label5 = new Label();
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
@@ -43,8 +45,6 @@
             label4 = new Label();
             btnEditarRiego = new Button();
             btnEliminarRiego = new Button();
-            label5 = new Label();
-            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvRiegos).BeginInit();
             panelMenu.SuspendLayout();
             SuspendLayout();
@@ -74,6 +74,7 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dgvRiegos.DefaultCellStyle = dataGridViewCellStyle2;
             dgvRiegos.Dock = DockStyle.Fill;
+            dgvRiegos.EditMode = DataGridViewEditMode.EditOnF2;
             dgvRiegos.EnableHeadersVisualStyles = false;
             dgvRiegos.GridColor = Color.LightGray;
             dgvRiegos.Location = new Point(0, 0);
@@ -115,6 +116,30 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(93, 861);
             panelMenu.TabIndex = 25;
+            // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FloralWhite;
+            label6.Location = new Point(16, 481);
+            label6.Name = "label6";
+            label6.Size = new Size(63, 25);
+            label6.TabIndex = 42;
+            label6.Text = "Riego";
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FloralWhite;
+            label5.Location = new Point(13, 261);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 25);
+            label5.TabIndex = 41;
+            label5.Text = "Riego";
             // 
             // label2
             // 
@@ -241,30 +266,6 @@
             btnEliminarRiego.TabIndex = 11;
             btnEliminarRiego.UseVisualStyleBackColor = false;
             btnEliminarRiego.Click += btnEliminarRiego_Click;
-            // 
-            // label5
-            // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FloralWhite;
-            label5.Location = new Point(13, 261);
-            label5.Name = "label5";
-            label5.Size = new Size(63, 25);
-            label5.TabIndex = 41;
-            label5.Text = "Riego";
-            // 
-            // label6
-            // 
-            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FloralWhite;
-            label6.Location = new Point(16, 481);
-            label6.Name = "label6";
-            label6.Size = new Size(63, 25);
-            label6.TabIndex = 42;
-            label6.Text = "Riego";
             // 
             // RiegosControl
             // 

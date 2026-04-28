@@ -30,14 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             panelTop = new Panel();
+            label10 = new Label();
+            btnLogOut = new Button();
             cmbBuscar = new ComboBox();
             txtBuscar = new TextBox();
             btnBuscar = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             lblBienvenida = new Label();
-            btnLogOut = new Button();
             panelMenu = new Panel();
+            label11 = new Label();
+            button1 = new Button();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
@@ -61,6 +64,8 @@
             // panelTop
             // 
             panelTop.BackColor = Color.DarkOliveGreen;
+            panelTop.Controls.Add(label10);
+            panelTop.Controls.Add(btnLogOut);
             panelTop.Controls.Add(cmbBuscar);
             panelTop.Controls.Add(txtBuscar);
             panelTop.Controls.Add(btnBuscar);
@@ -72,6 +77,32 @@
             panelTop.Name = "panelTop";
             panelTop.Size = new Size(1904, 107);
             panelTop.TabIndex = 0;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(1741, 76);
+            label10.Name = "label10";
+            label10.Size = new Size(107, 21);
+            label10.TabIndex = 23;
+            label10.Text = "Cerrar Sesión";
+            // 
+            // btnLogOut
+            // 
+            btnLogOut.BackColor = Color.Transparent;
+            btnLogOut.BackgroundImage = (Image)resources.GetObject("btnLogOut.BackgroundImage");
+            btnLogOut.BackgroundImageLayout = ImageLayout.Stretch;
+            btnLogOut.FlatAppearance.BorderSize = 0;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogOut.ForeColor = Color.White;
+            btnLogOut.Location = new Point(1854, 62);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(38, 35);
+            btnLogOut.TabIndex = 2;
+            btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += btnLogOut_Click;
             // 
             // cmbBuscar
             // 
@@ -120,7 +151,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(1687, 12);
+            pictureBox1.Location = new Point(1630, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(55, 51);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -130,30 +161,17 @@
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
-            lblBienvenida.Location = new Point(1758, 23);
+            lblBienvenida.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBienvenida.Location = new Point(1691, 12);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(0, 15);
+            lblBienvenida.Size = new Size(0, 21);
             lblBienvenida.TabIndex = 0;
-            // 
-            // btnLogOut
-            // 
-            btnLogOut.BackColor = Color.Transparent;
-            btnLogOut.BackgroundImage = (Image)resources.GetObject("btnLogOut.BackgroundImage");
-            btnLogOut.BackgroundImageLayout = ImageLayout.Stretch;
-            btnLogOut.FlatAppearance.BorderSize = 0;
-            btnLogOut.FlatStyle = FlatStyle.Flat;
-            btnLogOut.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogOut.ForeColor = Color.White;
-            btnLogOut.Location = new Point(63, 872);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(41, 41);
-            btnLogOut.TabIndex = 2;
-            btnLogOut.UseVisualStyleBackColor = false;
-            btnLogOut.Click += btnLogOut_Click;
             // 
             // panelMenu
             // 
             panelMenu.BackColor = Color.DarkOliveGreen;
+            panelMenu.Controls.Add(label11);
+            panelMenu.Controls.Add(button1);
             panelMenu.Controls.Add(label9);
             panelMenu.Controls.Add(label8);
             panelMenu.Controls.Add(label7);
@@ -166,13 +184,40 @@
             panelMenu.Controls.Add(label3);
             panelMenu.Controls.Add(label2);
             panelMenu.Controls.Add(label1);
-            panelMenu.Controls.Add(btnLogOut);
             panelMenu.Controls.Add(btnRiego);
             panelMenu.Dock = DockStyle.Left;
             panelMenu.Location = new Point(0, 107);
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(125, 934);
             panelMenu.TabIndex = 1;
+            // 
+            // label11
+            // 
+            label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FloralWhite;
+            label11.Location = new Point(38, 891);
+            label11.Name = "label11";
+            label11.Size = new Size(51, 25);
+            label11.TabIndex = 24;
+            label11.Text = "Salir";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Transparent;
+            button1.Location = new Point(18, 807);
+            button1.Name = "button1";
+            button1.Size = new Size(82, 81);
+            button1.TabIndex = 23;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label9
             // 
@@ -408,5 +453,8 @@
         private Label label8;
         private Label label7;
         private Label label9;
+        private Label label10;
+        private Label label11;
+        private Button button1;
     }
 }
