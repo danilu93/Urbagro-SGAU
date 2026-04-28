@@ -45,7 +45,11 @@ namespace Sgau
         {
             SesionAbierta.CerrarSesion(); // Cerrar la sesión actual
 
-            this.Close(); // Cerrar el formulario principal para volver a la pantalla de inicio de sesión
+            var confirmacion = MessageBox.Show("¿Estás seguro de que deseas cerrar sesión?", "Confirmar cierre de sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question); // Mostrar un mensaje de confirmación al hacer clic en el botón de cerrar sesión
+            if (confirmacion == DialogResult.Yes)
+            {
+                this.Close(); // Cerrar el formulario principal para volver a la pantalla de inicio de sesión
+            }
 
         }
 
@@ -147,7 +151,11 @@ namespace Sgau
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit(); // Cerrar la aplicación al hacer clic en el botón de cerrar
+            var confirmacion = MessageBox.Show("¿Estás seguro de que deseas cerrar la aplicación?", "Confirmar cierre", MessageBoxButtons.YesNo, MessageBoxIcon.Question); // Mostrar un mensaje de confirmación al hacer clic en el botón de cerrar
+            if (confirmacion == DialogResult.Yes)
+            {
+                Application.Exit(); // Cerrar la aplicación al hacer clic en el botón de cerrar
+            }
         }
     }
 }

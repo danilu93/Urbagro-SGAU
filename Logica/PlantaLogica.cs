@@ -69,6 +69,9 @@ namespace Logica
                 throw new ArgumentException("Tipo de planta inválido");
             if (planta.FechaSiembra == default) // Verifica que la fecha de siembra no sea la fecha por defecto
                 throw new ArgumentException("Fecha de siembra obligatoria.");
+            if (string.IsNullOrWhiteSpace(planta.MetodoSiembra)) // Verifica que el método de siembra no esté vacío o solo contenga espacios
+                throw new ArgumentException("Método de siembra obligatorio.");
+
 
             bool resultado = plantaDatos.EditarPlanta(planta); // Llama al método de datos para editar la planta en la base de datos
             if (!resultado) // Si el método EditarPlanta devuelve false, significa que hubo un error al editar la planta
