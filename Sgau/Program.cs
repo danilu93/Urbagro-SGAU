@@ -1,5 +1,6 @@
 namespace Sgau
 {
+    // Clase principal del programa, que contiene el punto de entrada Main.
     internal static class Program
     {
         /// <summary>

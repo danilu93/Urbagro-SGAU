@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="../EntityFramework/EntityFramework.csproj" />
+  <Project Path="../Logica/Logica.csproj" Id="4296bf9c-8302-4324-9178-58023f5ea1c6" />
   <Project Path="../Modelo/Modelo.csproj" />
   <Project Path="Sgau.csproj" />
 </Solution>
